@@ -5,6 +5,7 @@ import Leaderboard from './components/Leaderboard';
 import Teams from './components/Teams';
 import Users from './components/Users';
 import Workouts from './components/Workouts';
+import logo from './assets/octofitapp-small.png';
 import './App.css';
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div className="container-fluid">
-          <Link className="navbar-brand fw-bold" to="/">OctoFit Tracker</Link>
+          <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
+            <img src={logo} alt="OctoFit Logo" className="octofit-logo me-2" />
+            OctoFit Tracker
+          </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
